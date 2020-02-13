@@ -17,12 +17,12 @@ Users:
 - [x] run migration make for migrations files
 - [x] visually plan out schema based on MVP requirements :D 
 - [x] write up and down migration functions to create tables
-- [ ] knex migrate:latest to make db3 file...
-- [ ] check set up on SQLite Studio to make sure it's all kosher
-- [ ] run knex:seed make for all seed files in the order they are created in the migration files.
-- [ ] write seed code.
-- [ ] knex seed:run
-- [ ] check that data is correct and in place in SQLite Studio.
+- [x] knex migrate:latest to make db3 file...
+- [x] check set up on SQLite Studio to make sure it's all kosher
+- [NA] run knex:seed make for all seed files in the order they are created in the migration files.
+- [NA] write seed code.
+- [NA] knex seed:run
+- [x] check that data is correct and in place in SQLite Studio.
 - [ ] set up first table router and model files.
 - [ ] Set up server files...db-config.js (in data folder), index.js (root), and server.js (root) files.
 - [ ] check that server runs
