@@ -1,0 +1,29 @@
+- DB will revolve arount projects, tasks, and resource.
+  - Projects will have multiple tasks,
+  - tasks will only belong to one proj.
+  - resources are added thing in each project.
+
+# TABLES:
+
+
+# Setup order:
+- [x] npm init
+- [x] yarn add dependencies
+- [x] make sure script file is set up so nodemon runs with server command
+- [ ] knex init and set up knex file...
+- [ ] run migration make for migrations files
+- [ ] visually plan out schema based on MVP requirements :D 
+- [ ] write up and down migration functions to create tables
+- [ ] knex migrate:latest to make db3 file...
+- [ ] check set up on SQLite Studio to make sure it's all kosher
+- [ ] run knex:seed make for all seed files in the order they are created in the migration files.
+- [ ] write seed code.
+- [ ] knex seed:run
+- [ ] check that data is correct and in place in SQLite Studio.
+- [ ] set up first table router and model files.
+- [ ] Set up server files...db-config.js (in data folder), index.js (root), and server.js (root) files.
+- [ ] check that server runs
+- [ ] Flesh out projects-model then projects-router page for endpoints
+- [ ] Flesh out resources-model then resources-router page for endpoints
+- [ ] Flesh out tasks-model then tasks-router page for endpoints 
+- [ ] Stretch goals if time!
