@@ -9,10 +9,10 @@ module.exports = {
       filename: './db/auth.db3'
     },
     migrations: {
-      directory: './db/data/migrations'
+      directory: './db/migrations'
     },
     seeds: {
-      directory: './data/seeds'
+      directory: './db/seeds'
     },
     pool: {
       afterCreate: (conn, done) => {
