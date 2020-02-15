@@ -25,7 +25,7 @@ router.post('/login', (req, res) => {
   Users.findBy({ username })
     .first()
     .then(user => {
-      if (user && bcrypt.compareSync(password, user.password)) {
+      if(user && bcrypt.compareSync(password, user.password)) {
         req.session.user = user;
         res.status(200).json({ message: `Logged In! Welcome back ${user.username}!`});
       } else {
@@ -38,6 +38,26 @@ router.post('/login', (req, res) => {
         error: err
       });
     });
+});
+
+router.get('/logout', (req, res) => {
+  if(req.session) {
+    req.session.destroy(error => {
+      if(error) {
+        res.json({
+          message: "There was an issue logging you out, please try again"
+        });
+      }else {
+        res.status(200).json({
+          message: "You have been logged out."
+        })
+      }
+    });
+  }else {
+    res.status(200).json({
+      message: "You are already logged out."
+    });
+  }
 });
 
 module.exports = router;
